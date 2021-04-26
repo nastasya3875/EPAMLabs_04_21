@@ -29,11 +29,10 @@ namespace Array
             }
 
             Console.WriteLine("Вывод массива");
-            for (int i = 0; i < arr.Length; i++)
+            foreach (int i in arr)
             {
-                Console.WriteLine(arr[i]);
+                Console.WriteLine(i);
             }
-            Console.ReadLine();
         }
     }
 }

@@ -20,29 +20,26 @@ namespace Calc
             Console.WriteLine("Введите число: ");
             b = Convert.ToDouble(Console.ReadLine());
 
-            if (sign == '+')
+            switch (sign)
             {
-                total = a + b;
-                Console.WriteLine("Ответ: " + total);
-            }
-            else if (sign == '-')
-            {
-                total = a - b;
-                Console.WriteLine("Ответ: " + total);
-            }
-            else if (sign == '*')
-            {
-                total = a * b;
-                Console.WriteLine("Ответ: " + total);
-            }
-            else if (sign == '/')
-            {
-                total = a / b;
-                Console.WriteLine("Ответ: " + total);
-            }
-            else
-            {
-                Console.WriteLine("Неизвестный оператор");
+                case '+':
+                    total = a + b;
+                    Console.WriteLine("Ответ: " + total);
+                    break;
+                case '-':
+                    total = a - b;
+                    Console.WriteLine("Ответ: " + total);
+                    break;
+                case '*':
+                    total = a * b;
+                    Console.WriteLine("Ответ: " + total);
+                    break;
+                case '/':
+                    total = a / b;
+                    Console.WriteLine("Ответ: " + total);
+                    break;
+                default:
+                    Console.WriteLine("Неизвестный оператор"); break;
             }
 
         }
