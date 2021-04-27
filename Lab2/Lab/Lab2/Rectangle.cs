@@ -9,6 +9,8 @@ namespace Lab2
     class Rectangle : Figure
     {
         double a, b;
+        public int number { get; set; }
+        public string color { get; set; }
         public Rectangle(double a, double b)
         {
             this.a = a;
